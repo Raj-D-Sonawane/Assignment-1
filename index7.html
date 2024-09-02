@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colore</title>
+    <style>
+        
+        .row {
+            display: flex;
+            margin-bottom: 10px; 
+        }
+
+        .column {
+            flex: 1; 
+            height: 100px; 
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            margin-right: 10px; 
+        }
+
+        
+        .column:last-child {
+            margin-right: 0;
+        }
+
+
+        .bg-tomato {
+            background-color: tomato;
+        }
+        .bg-orange {
+            background-color: orange;
+            color: black;
+        }
+        .bg-dodgerblue {
+            background-color: dodgerblue;
+        }
+        .bg-mediumseagreen {
+            background-color: mediumseagreen;
+        }
+        .bg-gray {
+            background-color: gray;
+        }
+        .bg-slateblue {
+            background-color: slateblue;
+        }
+        .bg-violet {
+            background-color: violet;
+            color: black;
+        }
+        .bg-lightgray {
+            background-color: lightgray;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="row">
+    <div class="column bg-tomato">Tomato</div>
+    <div class="column bg-orange">Orange</div>
+    <div class="column bg-dodgerblue">DodgerBlue</div>
+    <div class="column bg-mediumseagreen">MediumSeaGreen</div>
+</div>
+
+
+<div class="row">
+    <div class="column bg-gray">Gray</div>
+    <div class="column bg-slateblue">SlateBlue</div>
+    <div class="column bg-violet">Violet</div>
+    <div class="column bg-lightgray">LightGray</div>
+</div>
+
+</body>
+</html>

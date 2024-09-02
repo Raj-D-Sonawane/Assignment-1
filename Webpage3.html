@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institute Webpage</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 25% 50% 25%;
+            height: 100vh;
+        }
+
+        .header {
+            grid-row: 1;
+            grid-column: 1 / -1; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-bottom: 2px solid #ccc;
+        }
+
+        .header img {
+            max-height: 50px; 
+            margin-left: 10px;
+        }
+
+        .sidebar {
+            grid-row: 2;
+            grid-column: 1;
+            background-color: #e9e9e9;
+            padding: 10px;
+            border-right: 2px solid #ccc;
+            overflow-y: auto;
+        }
+
+        .content {
+            grid-row: 2;
+            grid-column: 2;
+            padding: 10px;
+            overflow-y: auto;
+        }
+
+        .news {
+            grid-row: 2;
+            grid-column: 3;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 2px solid #ccc;
+            overflow-y: auto;
+        }
+
+        .footer {
+            grid-row: 3;
+            grid-column: 1 / -1; 
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-top: 2px solid #ccc;
+            text-align: center;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 5px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .sidebar a:hover {
+            background-color: #ddd;
+        }
+
+        .news marquee {
+            width: 100%;
+            background-color: #e9e9e9;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <div class="header">
+        <span>SPLENDID INFOSYSTEMS</span>
+        <img src="Screenshot_2024-08-13-00-51-29-32_40deb401b9ffe8e1df2f1cc5ba480b12.jpg" alt="Institute Logo">
+    </div>
+
+    
+    <div class="sidebar">
+        <a href="https://en.wikipedia.org/wiki/Computer" target="content-frame">Computer Fundamentals</a>
+        <a href="https://en.wikipedia.org/wiki/Communication" target="content-frame">Communication Skills</a>
+        <a href="page3.html" target="content-frame">Language C</a>
+        <a href="page4.html" target="content-frame">HTML & Networking</a>
+    </div>
+
+    
+    <div class="content">
+        <iframe name="content-frame" style="width:100%; height:100%; border:none;" src="https://splendidinfosystems.com/" title="Content Frame"></iframe>
+    </div>
+
+    
+    <div class="news">
+        <marquee>Breaking News: Welcome to the Institute!New PPC batch admission start</marquee>
+    </div>
+
+    
+    <div class="footer">
+        Date of Creation: 13 August 2024 | Developed By: Raj Dnyaneshwar Sonawane
+    </div>
+</div>
+
+</body>
+</html>

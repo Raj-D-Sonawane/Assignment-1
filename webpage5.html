@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boxmodel{
+            width: 600px;
+            height: 800px;
+            background-color: chartreuse;
+            
+            text-align: center;
+        
+        }
+        h4{
+            text-align: center;
+            color: brown;
+        }
+         input{
+            padding-left: 20px;
+            margin-top: 20px;
+         }
+    </style>
+</head>
+<body>
+    <div class="boxmodel">
+        <h4>Personal Details</h4>
+        <label>Name:</label>
+        <input type="text" required>
+        <br />
+        <label>Password :</label>
+        <input type="password"required>
+        <br />
+        <label>E-mail id :</label>
+        <input type="email"required>
+        <br />
+        <label>Contact :</label>
+        <input type="number"required>
+        <br />
+        <h6>Gender :
+        <input type="radio" id="Male" name="Gender" value="Male" required>
+        <label for="Male">Male</label>
+        <input type="radio" id="Female" name="Gender" value="Female"required>
+        <label for="Male">Female</label>
+        </h6>
+        <br />
+        <h4>Educational Qualification</h4>
+        <br />
+        <label for="Degree">Degree:</label>
+        <select id="Degree" name="Degree">
+            <option value="select">--Select Degree</option>
+            <option value="B.SC.IT">B.SC.IT</option>
+            <option value="B.SC.IS">B.SC.IS</option>
+            <option value="B.SC.CS">B.SC.CS</option>
+        </select>
+        <br><br>
+        <h4>Address</h4>
+        <br  />
+
+        <label for="address"></label><br>
+        <textarea id="address" name="address" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <label>Attach Reasume:</label>
+        <input type="file"  placeholder="Choose File" required>
+        <br />
+        <input type="submit" value="Submit">
+
+
+
+
+    </div>
+    
+</body>
+</html>

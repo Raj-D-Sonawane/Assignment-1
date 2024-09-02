@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Buttons with Close Icons</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Font Awesome CSS for icons -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <style>
+            .btn-close-icon {
+                position: relative;
+            }
+    
+            .btn-close-icon .fas {
+                position: absolute;
+                right: 5px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        
+        .btn-circle {
+            width: 100px;
+            height: 100px;
+            padding: 0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border: none; /* Remove default button border */
+            background-color: transparent; /* Remove default button background */
+        }
+
+        .btn-circle img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        </style>
+    </head>
+    <body>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        
+        <hr />
+
+    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-primary btn-close-icon">
+                    Button  <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="col">
+                <button class="btn btn-secondary btn-close-icon">
+                    Button  <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="col">
+                <button class="btn btn-success btn-close-icon">
+                    Button  <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <hr  />
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col text-center">
+                <button class="btn btn-circle">
+                    <img src="Screenshot_2024-08-13-00-51-29-32_40deb401b9ffe8e1df2f1cc5ba480b12.jpg" alt="Sample Image">button
+                </button>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Bootstrap JS (optional, for Bootstrap components) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>
+    
